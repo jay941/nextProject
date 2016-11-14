@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Reading_Json_File</title>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body ng-controller="readCtrl">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><i class="ion-ios7-pulse-strong"></i>Json_Data</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      </div>
+    </div>
+  </nav>
+  <!--End of Navigation-->
+
+  <div class="container" id="top">
+    <div class="row">
+      <div class="col-sm-6">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Images</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="d in data " ng-drag="true" ng-drag-data="d" data-allow-transform="true">
+
+              <td> <img  src={{d.Image}} style="width:100%"></td>
+
+            </tr>
+               
+          </tbody>
+        </table> 
+        
+
+        </div>
+      <div class="col-sm-6">
+        <div ng-drop="true" ng-drop-success="onDropComplete1($data,$event)">
+
+
+          <div id="bottom" ng-repeat="obj in droppedObjects1" ng-drag="true" ng-drag-data="obj" ng-drag-success="onDragSuccess1($data,$event)"
+            ng-center-anchor="{{centerAnchor}}">
+
+            <img src={{obj.Image}} style="width:100%" ng-mode="enable">
+            <h4 style="color: black;">{{obj.Name}}</h4>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <button class="button" ng-disabled="isDisabled" ng-click="refresh()">Refresh</button>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+         <canvas style="z-index:1" id="canvas" width="1000" height="600"></canvas>
+      </div>
+      <!--<div class="col-sm-6">
+         <canvas style="z-index:1" id="canvas1" width="200" height="600"></canvas>
+      </div>-->
+
+
+    </div>
+  </div>
+
+ <!-- Third-party Libraries -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/ngDraggable/ngDraggable.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="bower_components/jquery/dist/jquery.js"></script>
+
+
+  <!-- Dependency -->
+  <script src="app.js"></script>
+  <script src="controller/readCtrl.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
