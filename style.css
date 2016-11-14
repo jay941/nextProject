@@ -101,6 +101,233 @@ border:solid 1px red;
     margin: 4px 2px;
     cursor: pointer;
 }
-canvas {
-    border: 1px solid #000;
+
+#canvas{
+  border: solid 1px blue;  
+
+}
+
+/*Css for medium screen*/
+@media only screen and (max-width: 1400px) {
+    #top{
+  margin-top: 180px;
+}
+#bottom{
+     margin-top: -60px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container1 {
+    padding: 2px 16px;
+}
+
+*{
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+[ng-drag]{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+[ng-drag]{
+      
+    width: 100px;
+    height: 100px;
+    color:white;
+    text-align: center;
+    display: inline-block;
+    margin:0 10px;
+    cursor: move;
+}
+ul.draggable-objects:after{
+    display: block;
+    content:"";
+    clear:both;
+}
+.draggable-objects li{
+    float:left;
+    display: block;
+    width: 120px;
+    height:100px;
+}
+[ng-drag].drag-over{
+    border:solid 1px red;
+}
+[ng-drag].dragging{
+    opacity: 0.5;
+}
+[ng-drop]{
+border:solid 1px red;
+    text-align: center;
+    width: 600px;
+    height: 200px;
+    padding-top:90px;
+    display: block;
+    margin:20px auto;
+    position: relative;
+}
+[ng-drop].drag-enter{
+    border:solid 5px red;
+}
+[ng-drop] span.title{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 200px;
+    height: 20px;
+    margin-left: -100px;
+    margin-top: -10px;
+}
+[ng-drop] div{
+    position: relative;
+    z-index: 2;
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#canvas{
+  border: solid 1px blue;  
+ 
+}
+
+
+}
+
+/*Css for small screen*/
+@media only screen and (max-width: 500px) {
+    #top{
+  margin-top: 180px;
+}
+#bottom{
+     margin-top: -60px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container1 {
+    padding: 2px 16px;
+}
+
+*{
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+[ng-drag]{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+[ng-drag]{
+      
+    width: 50px;
+    height: 50px;
+    color:white;
+    text-align: center;
+    display: inline-block;
+    margin:0 5px;
+    cursor: move;
+}
+ul.draggable-objects:after{
+    display: block;
+    content:"";
+    clear:both;
+}
+.draggable-objects li{
+    float:left;
+    display: block;
+    width: 60px;
+    height:50px;
+}
+[ng-drag].drag-over{
+    border:solid 1px red;
+}
+[ng-drag].dragging{
+    opacity: 0.5;
+}
+[ng-drop]{
+border:solid 1px red;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    padding-top:45px;
+    display: block;
+    margin:10px auto;
+    position: relative;
+}
+[ng-drop].drag-enter{
+    border:solid 5px red;
+}
+[ng-drop] span.title{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 200px;
+    height: 20px;
+    margin-left: -100px;
+    margin-top: -10px;
+}
+[ng-drop] div{
+    position: relative;
+    z-index: 2;
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#canvas{
+  border: solid 1px blue;  
+
+}
+
 }

@@ -34,7 +34,7 @@
 
   <div class="container" id="top">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -43,17 +43,14 @@
           </thead>
           <tbody>
             <tr ng-repeat="d in data " ng-drag="true" ng-drag-data="d" data-allow-transform="true">
-
-              <td> <img  src={{d.Image}} style="width:100%"></td>
-
+            <td> <img src={{d.Image}} style="width:100%"></td>
             </tr>
-               
-          </tbody>
-        </table> 
-        
+            </tbody>
+        </table>
 
-        </div>
-      <div class="col-sm-6">
+
+      </div>
+      <div class="col-md-6">
         <div ng-drop="true" ng-drop-success="onDropComplete1($data,$event)">
 
 
@@ -77,22 +74,19 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-         <canvas style="z-index:1" id="canvas" width="1000" height="600"></canvas>
+      <div class="col-md-6">
+        <canvas style="z-index:1" id="canvas" width="1000" height="600"></canvas>
       </div>
-      <!--<div class="col-sm-6">
-         <canvas style="z-index:1" id="canvas1" width="200" height="600"></canvas>
-      </div>-->
 
 
     </div>
   </div>
 
- <!-- Third-party Libraries -->
+  <!-- Third-party Libraries -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/ngDraggable/ngDraggable.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-   <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
 
 
   <!-- Dependency -->
