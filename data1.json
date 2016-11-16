@@ -3,38 +3,26 @@
     {
       "id": 4,
       "Image": "Images/jelly.png",
-      "Name": "Jelly_Fish",
-      "x": 850,
-      "y": 40,
-      "x1": 830,
-      "y1": 120
+      "Name": "Jelly_Fish"
+     
     },
     {
       "id": 2,
       "Image": "Images/fish.png",
-      "Name": "Fish",
-      "x": 850,
-      "y": 330,
-      "x1": 830,
-      "y1": 250
+      "Name": "Fish"
+     
     },
     {
       "id": 1,
       "Image": "Images/cat.png",
-      "Name": "Cat",
-      "x": 850,
-      "y": 450,
-      "x1": 830,
-      "y1": 400
+      "Name": "Cat"
+      
     },
     {
       "id": 3,
       "Image": "Images/peg.png",
-      "Name": "Pegvin",
-      "x": 850,
-      "y": 170,
-      "x1": 830,
-      "y1": 510
+      "Name": "Pegvin"
+     
     }
   ]
 }
