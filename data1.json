@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "id": 4,
+      "id": 1,
       "Image": "Images/jelly.png",
       "Name": "Jelly_Fish"
      
@@ -13,13 +13,13 @@
      
     },
     {
-      "id": 1,
+      "id": 3,
       "Image": "Images/cat.png",
       "Name": "Cat"
       
     },
     {
-      "id": 3,
+      "id": 4,
       "Image": "Images/peg.png",
       "Name": "Pegvin"
      
